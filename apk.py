@@ -3,8 +3,9 @@ import boto3
 # Replace the values below with your own
 bucket_name = 'apkapp'
 download_folder = '/Users/ppunnun/Documents/GitHub/FlowDroid/apk'
-first_object_to_download = 0
-num_objects_to_download = 5
+
+first_object_to_download = 251 #+1 from the num_objects_to_download
+num_objects_to_download = 250
 
 # Create an S3 client
 s3 = boto3.client('s3')
